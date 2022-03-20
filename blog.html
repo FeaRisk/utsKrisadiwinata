@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelaris</title>
+    <link rel="stylesheet" href="CSS/font awesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header-course">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    </section>
+
+    <!---Blog Page Content--->
+    <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-kiri">
+                <h2>Concerned Ape Discussed Possibility of Stardew Valley 1.6 Update</h2>
+                <img src="img/blog1.jpg">
+                <p>
+                    After Eric “Concerned Ape” Barone announced he’d be self-publishing the Android version of
+                    Stardew
+                    Valley, he went on to talk about the possibility of a 1.6 update and future game additions. While he
+                    began by joking that 1.6 would appear “when 1.5 drops,” he went on to discuss things that could show
+                    up in the game and how long he might continue to add to it. He didn’t guarantee anything, but said
+                    there is a chance more content could arrive.
+
+                    One of the first things Barone said is that there could be more Stardew Valley updates, perhaps like
+                    an eventual 1.6 patch, but noted it wouldn’t be “as big as the 1.5 update was.”
+                </p>
+                <br>
+                <img src="img/ape1.PNG">
+                <br>
+                <p>
+                    Barone also described one feature that could appear. He said people will be able to move the house
+                    and pet area. Currently, in-game they are in an established place when you pick your Stardew Valley
+                    farm type. They will always be in the upper right area of the map.
+
+                    Another response also went over the possibility of more Stardew Valley characters becoming romance
+                    options.
+                </p>
+                <br>
+                <img src="img/ape2.PNG">
+                <br>
+                <p>
+                    Barone also mentioned that platonic versions of the 10 and 14 heart events would need to involve
+                    entirely new “friend-only” final events. He noted this would involve “a lot of work.”
+
+                    Stardew Valley is available on the Nintendo Switch, PS4, Vita, Xbox One, PC, and mobile devices.
+                </p>
+
+                <div class="comment-box">
+
+                    <h3>Leave a comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="text" placeholder="Enter E-mail">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="visitus red-visitus">POST COMMENT</button>
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="blog-kanan">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>PC Games</span>
+                    <span>95</span>
+                </div>
+                <div>
+                    <span>Switch Games</span>
+                    <span>25</span>
+                </div>
+                <div>
+                    <span>Pixel Article</span>
+                    <span>55</span>
+                </div>
+                <div>
+                    <span>Anime</span>
+                    <span>43</span>
+                </div>
+                <div>
+                    <span>Basic tips</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>Characters design</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Aseprite</span>
+                    <span>5</span>
+                </div>
+                <div>
+                    <span>Isometric</span>
+                    <span>18</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!------Footer----->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We Pixelaris are an organization that provides something related to pixel art to you viewers who visit our
+            site</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/kris.adiwinata.54"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://youtube.com/channel/UCGGxik5L2fttgMmtMNTJz0Q"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://instagram.com/kris.adw?utm_medium=copy_link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/2b-kris-adiwinata-726379214"><i
+                    class="fa-brands fa-linkedin-in"></i></a></a>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by KRIS ADIWINATA</p>
+    </section>
+
+    <!----Button Up----->
+    <section class="button">
+        <div class="btn">
+            <button onClick="topFunction()" id="scroll-btn" title="top" <i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+
+
+    </section>
+
+    <!----Javascript Button Up-->
+    <script>
+        // ketika pengunjung scroll kebawah 20px dari atas dokumen, maka tampilkan tombol scroll-btn
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scroll-btn").style.display = "block";
+            } else {
+                document.getElementById("scroll-btn").style.display = "none";
+            }
+        }
+
+        // ketika tombol tersebut di klik, maka lakukan scroll keatas laman
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!----Javascript untuk mengatur tombol menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
